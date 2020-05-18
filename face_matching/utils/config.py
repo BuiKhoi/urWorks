@@ -1,0 +1,8 @@
+INSIGHT_MODEL_PATH = "/mnt/01D59EBC8D926700/Projects/urWorks/face_matching/pretrained_models/insightface/model-mobile-v2/model,0"
+
+DETECTION_SCORE_THRESHOLD = 0.9
+COSINE_THRESHOLD = 93
+IMAGE_SIZE_STR = "112,112"
+
+MIN_COSINE_SIMILARITY = 0.3
+MAX_COSINE_SIMILARITY = 1.2
