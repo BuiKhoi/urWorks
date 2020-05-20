@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/des_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/search_button" />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/des_add"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="@string/add_button" />
+
+    <item
+        android:id="@+id/des_empty"
+        android:title=""
+        android:checkable="false"
+        android:checked="false"
+        app:showAsAction="always"
+        android:enabled="false"
+        />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/des_message"
+        android:icon="@drawable/ic_message_black_24dp"
+        android:title="@string/message_button" />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/des_profile"
+        android:icon="@drawable/ic_profile_black_24dp"
+        android:title="@string/profile_button" />
+</menu>
