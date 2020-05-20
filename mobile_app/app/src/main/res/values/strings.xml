@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hackathon</string>
+    <string name="search_button">Search</string>
+    <string name="add_button">Add</string>
+    <string name="message_button">Message</string>
+    <string name="profile_button">Profile</string>
+</resources>

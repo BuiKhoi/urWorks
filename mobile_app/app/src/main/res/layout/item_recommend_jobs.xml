@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/custom_border_item_recomment_jobs">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar_of_item_recommend_jobs"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/anh1"/>
+
+    <LinearLayout
+        android:id="@+id/content_of_item_recommend_jobs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/avatar_of_item_recommend_jobs"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_job_item_recommend_jobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title job"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/summary_item_recommend_jobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Summary job" />
+
+        <TextView
+            android:id="@+id/salary_item_recommend_jobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slary: 100$ - 200$" />
+
+        <TextView
+            android:id="@+id/function_item_recommend_jobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Form of work : IT" />
+
+        <TextView
+            android:id="@+id/location_item_recommend_jobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location : Da nang" />
+
+    </LinearLayout>
+
+</RelativeLayout>

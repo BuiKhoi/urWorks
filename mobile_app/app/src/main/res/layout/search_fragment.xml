@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".ui.search.SearchFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@drawable/bg_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="23dp"
+            android:text="Search Jobs"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_to_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_fragment"
+            android:text="Button" />
+
+        <TextView
+            android:id="@+id/title_recyclerview_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_to_filter"
+            android:layout_marginTop="65dp"
+            android:paddingLeft="18dp"
+            android:text="Recommended Jobs"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_search_job"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_recyclerview_recommend"
+            tools:listitem="@layout/item_recommend_jobs" />
+    </RelativeLayout>
+
+</FrameLayout>

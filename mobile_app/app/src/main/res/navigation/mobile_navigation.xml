@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/des_search">
+
+    <fragment
+        android:id="@+id/des_search"
+        android:name="com.example.hackathon.ui.search.SearchFragment"
+        android:label="search_fragment"
+        tools:layout="@layout/search_fragment" >
+        <action
+            android:id="@+id/next_action_search_to_filter"
+            app:destination="@id/des_filter"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/des_add"
+        android:name="com.example.hackathon.ui.add.AddFragment"
+        android:label="add_fragment"
+        tools:layout="@layout/add_fragment" />
+    <fragment
+        android:id="@+id/des_message"
+        android:name="com.example.hackathon.ui.message.MessageFragment"
+        android:label="message_fragment"
+        tools:layout="@layout/message_fragment" />
+    <fragment
+        android:id="@+id/des_profile"
+        android:name="com.example.hackathon.ui.profile.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/des_swipe"
+        android:name="com.example.hackathon.ui.fab_button.swipe.SwipeFragment"
+        android:label="swipe_fragment"
+        tools:layout="@layout/swipe_fragment" />
+    <fragment
+        android:id="@+id/des_history"
+        android:name="com.example.hackathon.ui.fab_button.history.HistoryFragment"
+        android:label="history_fragment"
+        tools:layout="@layout/history_fragment" >
+        <action
+            android:id="@+id/next_action_des_history_to_des_detail"
+            app:destination="@id/des_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/des_selected"
+        android:name="com.example.hackathon.ui.fab_button.selected.SelectedFragment"
+        android:label="selected_fragment"
+        tools:layout="@layout/selected_fragment" />
+    <fragment
+        android:id="@+id/des_filter"
+        android:name="com.example.hackathon.ui.filter_recommen.type.FilterRecommendFragment"
+        android:label="filter_recommend_fragment"
+        tools:layout="@layout/filter_recommend_fragment" >
+        <action
+            android:id="@+id/next_action_filter_to_search"
+            app:destination="@id/des_search" />
+    </fragment>
+    <fragment
+        android:id="@+id/des_detail"
+        android:name="com.example.hackathon.ui.detail_job.DetailFragment"
+        android:label="detail_fragment"
+        tools:layout="@layout/detail_fragment" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+</navigation>
