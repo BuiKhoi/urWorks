@@ -8,6 +8,7 @@ import requests
 import json
 from keras.backend.tensorflow_backend import set_session
 import tensorflow as tf
+import random
 
 import sys
 sys.path.insert(1, '/mnt/01D59EBC8D926700/Projects/urWorks/face_matching')
@@ -106,8 +107,8 @@ def get_recommended_posts(userid, finding: bool):
     print(max(results))
     # results = [r>0.5 for r in results]
     matched = [i for i, x in enumerate(results) if x > 0.5]
-
-    return [idxs[ma] for ma in matched]
+    matched = [idxs[ma] for ma in matched]
+    return random.choices(matched, k=10)
 
 @app.get('/default_return/')
 def default_return():
